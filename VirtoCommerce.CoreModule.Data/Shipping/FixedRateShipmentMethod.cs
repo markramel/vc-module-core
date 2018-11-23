@@ -48,8 +48,8 @@ namespace VirtoCommerce.CoreModule.Data.Shipping
 
             return new ShippingRate[]
             {
-                new ShippingRate { Rate = GroundOptionRate, Currency = shippingEvalContext.ShoppingCart.Currency, ShippingMethod = this, OptionName = "Ground", OptionDescription = "Ground shipping" },
-                new ShippingRate { Rate = AirOptionRate, Currency = shippingEvalContext.ShoppingCart.Currency, ShippingMethod = this, OptionName = "Air", OptionDescription = "Air shipping" }
+                new ShippingRate { Rate = GroundOptionRate, Currency = shippingEvalContext.ShoppingCart.Currency, ShippingMethod = this, OptionName = "Standard", OptionDescription = "Standard shipping" },
+                new ShippingRate { Rate = AirOptionRate, Currency = shippingEvalContext.ShoppingCart.Currency, ShippingMethod = this, OptionName = "Express", OptionDescription = "Express shipping" }
             };
         }
 	}
